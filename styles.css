@@ -10,9 +10,9 @@ ul {
     float: left;
   }
 
-  #login {
+#login {
     float: right;
-  }
+}
 
   li a {
     display: block;
