@@ -3,11 +3,10 @@ session_start();
 ?>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="../styles.css">
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <h1>Login</h1>
-
     <form method="post" action="../backend/handler.php">
       <div class="container">
         <label for="username"><b>Username</b></label>
