@@ -3,7 +3,7 @@ session_start();
 ?>
 <html>
   <head>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" type="text/css" href="../styles.css">
   </head>
   <body>
     <h1>Login</h1>
