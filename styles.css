@@ -31,7 +31,9 @@ ul {
 form {
   border: 3px solid #f1f1f1;
 }
-
+.container {
+  padding: 16px;
+}
 input[type=text], input[type=password] {
   width: 100%;
   padding: 12px 20px;
@@ -39,9 +41,6 @@ input[type=text], input[type=password] {
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
-}
-.container {
-  padding: 16px;
 }
 button {
   background-color: #4CAF50;
