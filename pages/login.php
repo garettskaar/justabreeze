@@ -10,15 +10,15 @@ session_start();
 
     <form method="post" action="../backend/handler.php">
       <div class="container">
-        <label for="username">Username:</label> <input type="text" id="username" name="username">
-        <label for="password">Password:</label> <input type="password" id="password" name="password">
+        <label for="username"><b>Username</b></label> <input type="text" id="username" name="username">
+        <label for="password"><b>Password</b></label> <input type="password" id="password" name="password">
         <?php
           if (isset($_SESSION['message'])) {
             echo "<div id='message'>" . $_SESSION['message'] . "</div>";
           }
           unset($_SESSION['message']);
         ?>
-        <button type="submit" value="Login">
+        <button type="submit">Login</button>
       </div>
     </form>
     <a href="add_employee.php">Add New Employee</a>
