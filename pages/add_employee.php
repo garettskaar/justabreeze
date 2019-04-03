@@ -32,7 +32,7 @@ session_start();
                 <option value="server">Server</option>
                 <option value="bartender">Bartender</option>
                 <option value="host">Host/Hostess</option>
-                <option value="BW">Backwaiter</option>
+                <option value="backwaiter">Backwaiter</option>
                 <option value="manager">Manager</option>
             </select>
         </div>

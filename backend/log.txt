@@ -1,0 +1,12 @@
+now - INFO  --> Adding Employee [] 
+now - DEBUG --> Getting a connection. 
+now - INFO  --> Adding Employee [] 
+now - DEBUG --> Getting a connection. 
+now - INFO  --> Adding Employee .  
+now - DEBUG --> Getting a connection. 
+now - INFO  --> Adding Employee Kenny Werth 
+now - DEBUG --> Getting a connection. 
+now - INFO  --> Adding Employee Kenny Werth username = Kenny Werth 
+now - DEBUG --> Getting a connection. 
+now - INFO  --> Adding Employee Kenny Werth username = kwerth 
+now - DEBUG --> Getting a connection. 

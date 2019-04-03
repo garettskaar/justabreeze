@@ -40,11 +40,10 @@ if (!$valid) {
 }
 
 require_once 'Dao.php';
-//$dao = new Dao();
-//$dao->addEmployee($employee_name, $phone, $email, $restaurant, $position, $username, $password1);
+$dao = new Dao();
+$dao->addEmployee($employee_name, $phone, $email, $restaurant, $position, $username, $password1);
 echo "Employee successfully added to schedules...";
 header("Location: ../pages/login.php");
-// TODO insert stuff into a user table in the database..
 exit;
 
 ?>

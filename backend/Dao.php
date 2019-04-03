@@ -5,8 +5,8 @@ class Dao {
 
     private $host = "localhost";
     private $db = "justabreeze";
-    private $user = "gskaar";
-    private $pass = "Garett11";
+    private $user = "root";
+    private $pass = "";
     protected $logger;
     public function __construct () {
         $this->logger = new KLogger ( "log.txt" , KLogger::DEBUG );
@@ -28,21 +28,21 @@ class Dao {
         //TODO
     }
     public function addEmployee ($employee_name, $phone, $email, $restaurant, $position, $username, $password1) {
-        $this->logger->LogInfo("Adding Employee [{$employeename}]");
+        $this->logger->LogInfo("Adding Employee " . $employee_name ." username = ". $username);
         $restaurant_id = 0;
-        if($restaurant == 'Brickyard'){
+        if($restaurant == 'brickyard'){
             $restaurant_id = 1;
-        }else if($restaurant == 'Brixx')){
+        }else if($restaurant == 'brixx'){
             $restaurant_id = 2;
-        }else if($restaurant == 'Frontdoor')){
+        }else if($restaurant == 'Frontdoor'){
             $restaurant_id = 3;
-        }else if($restaurant == 'Legends')){
+        }else if($restaurant == 'Legends'){
             $restaurant_id = 4;
-        }else if($restaurant == 'Reef')){
+        }else if($restaurant == 'Reef'){
             $restaurant_id = 5;
         }
         $conn = $this->getConnection();
-        $saveQuery = "insert into employee (employee_name, phone_number, email, password, position, restaurant_id, user_name) 
+        $saveQuery = "insert into employee (employee_name, phone_number, email, password, position, restaurant_id, user_name)
         values (:employee_name, :phone, :email, :password1, :position, :restaurant_id, :username)";
         $q = $conn->prepare($saveQuery);
         $q->bindParam(":employee_name", $employee_name);
