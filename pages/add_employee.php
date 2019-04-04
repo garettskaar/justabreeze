@@ -9,8 +9,8 @@ session_start();
   <body>
     <h1>Add Employee</h1>
     <form method="post" action="../backend/add_employee_handler.php">
-        <div><label for="employeename"><b>Employee Name</b></label>
-            <input value="<?php echo isset($_SESSION['form_input']['employeename']) ? $_SESSION['form_input']['employeename'] : ''; ?>" type="text" id="employeename" name="employeename">
+        <div><label for="employee_name"><b>Employee Name</b></label>
+            <input value="<?php echo isset($_SESSION['form_input']['employee_name']) ? $_SESSION['form_input']['employee_name'] : ''; ?>" type="text" id="employee_name" name="employee_name">
         </div>
         <div><label for="phone"><b>Phone Number</b></label>
             <input value="<?php echo isset($_SESSION['form_input']['phone']) ? $_SESSION['form_input']['phone'] : ''; ?>" type="text" id="phone" name="phone">
