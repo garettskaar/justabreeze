@@ -5,8 +5,8 @@ class Dao {
 
     private $host = "localhost";
     private $db = "justabreeze";
-    private $user = "root";
-    private $pass = "";
+    private $user = "gskaar";
+    private $pass = "Garett11";
     protected $logger;
     public function __construct () {
         $this->logger = new KLogger ( "log.txt" , KLogger::DEBUG );
@@ -23,10 +23,12 @@ class Dao {
         }
         return $conn;
     }
-    public function login($username, $password) {
-        $this->logger->LogInfo("Attempting login " . $username ." password = ". $password);
+    public function login($username) {
+        $this->logger->LogInfo("Attempting login " . $username);
         $conn = $this->getConnection();
-        return $conn->query("select user_name, password from employee where user_name = {$userName}", PDO::FETCH_ASSOC);
+        $result = $conn->query("SELECT user_name, password FROM employee WHERE user_name = {$username}", PDO::FETCH_ASSOC);
+        $this->logger->LogInfo("password: " . $result[0]['password']);
+        return $result;
     }
     public function getEmployee ($userName) {
         $conn = $this->getConnection();

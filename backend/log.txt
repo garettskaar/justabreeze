@@ -1,14 +1,14 @@
-now - INFO  --> Adding Employee [] 
+
+now - INFO  --> Attempting login gskaar 
 now - DEBUG --> Getting a connection. 
-now - INFO  --> Adding Employee [] 
+now - INFO  --> Attempting login gskaar 
 now - DEBUG --> Getting a connection. 
-now - INFO  --> Adding Employee .  
+now - INFO  --> Attempting login gskaar 
 now - DEBUG --> Getting a connection. 
-now - INFO  --> Adding Employee Kenny Werth 
+now - INFO  --> Attempting login gskaar 
 now - DEBUG --> Getting a connection. 
-now - INFO  --> Adding Employee Kenny Werth username = Kenny Werth 
+now - INFO  --> Attempting login gskaar 
 now - DEBUG --> Getting a connection. 
-now - INFO  --> Adding Employee Kenny Werth username = kwerth 
+now - INFO  --> Attempting login gskaar 
 now - DEBUG --> Getting a connection. 
-now - INFO  --> Attempting login kwerth password = 1234 
-now - DEBUG --> Getting a connection. 
+now - INFO  --> password:  
