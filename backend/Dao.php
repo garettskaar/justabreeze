@@ -2,11 +2,18 @@
 require_once 'KLogger.php';
 //mysql://b2b615eaa73fa2:612152cf@us-cdbr-iron-east-03.cleardb.net/heroku_48bbb84ac8c8d06?reconnect=true
 class Dao {
-
+    //host:us-cdbr-iron-east-03.cleardb.net
+    //db:heroku_48bbb84ac8c8d06
+    //user:b2b615eaa73fa2
+    //pass:612152cf
     private $host = "us-cdbr-iron-east-03.cleardb.net";
     private $db = "heroku_48bbb84ac8c8d06";
     private $user = "b2b615eaa73fa2";
     private $pass = "612152cf";
+    // private $host = "localhost";
+    // private $db = "justabreeze";
+    // private $user = "gskaar";
+    // private $pass = "Garett11";
     protected $logger;
     public function __construct () {
         $this->logger = new KLogger ( "log.txt" , KLogger::DEBUG );
@@ -24,19 +31,22 @@ class Dao {
         return $conn;
     }
     public function login($username) {
-        $this->logger->LogInfo("wtf");
         $conn = $this->getConnection();
         $getQuery = "SELECT user_name, password FROM employee WHERE user_name = :username";
         $q = $conn->prepare($getQuery);
         $q->bindParam(":username", $username);
         $q->execute();
         $result = $q->fetch();
-        $this->logger->LogInfo("result: " . $result['password']);
         return $result;
     }
-    public function getEmployee ($userName) {
+    public function getEmployees() {
         $conn = $this->getConnection();
-        //TODO
+        $getQuery = "SELECT employee_name, phone_number, email FROM employee ORDER BY employee_id DESC";
+        $q = $conn->prepare($getQuery);
+        $q->execute();
+        $result = $q->fetch();
+        $this->logger->LogInfo("result: " . $result);
+        return $result;
     }
     public function addEmployee ($employee_name, $phone, $email, $restaurant, $position, $username, $password1) {
         $this->logger->LogInfo("Adding Employee " . $employee_name ." username = ". $username);

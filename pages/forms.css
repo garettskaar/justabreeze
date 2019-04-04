@@ -75,3 +75,14 @@ select {
   position: absolute;
   top: 50%;
 }
+table, td, th { 
+  border: 2px solid black; 
+}
+td, th {
+  padding: 5px 10px 10px 10px;
+}
+
+table { 
+  border-collapse: collapse; 
+}
+

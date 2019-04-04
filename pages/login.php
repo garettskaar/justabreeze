@@ -22,6 +22,6 @@ session_start();
         <button type="submit">Login</button>
       </div>
     </form>
-    <a href="add_employee.php">Add New Employee</a>
+    <a href="../index.php">Home</a>
   </body>
 </html>

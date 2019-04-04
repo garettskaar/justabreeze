@@ -15,7 +15,15 @@ session_start();
                 <li><a href="frontdoor.php">Frontdoor</a></li>
                 <li><a href="legends.php">Legends</a></li>
                 <li><a class="active" href="reef.php">Reef</a></li>
-                <li id ="login"><a href="login.php">Login</a></li>
+                <?php
+                    if($_SESSION['logged_in'] == true){
+                        echo "<li id =\"login\"><a href=\"../backend/logout.php\">Logout</a></li>";
+                        echo "<li id =\"login\"><a href=\"add_employee.php\">Add Employee</a></li>";
+                    }
+                    else{
+                        echo "<li id =\"login\"><a href=\"login.php\">Login</a></li>";
+                    }
+                ?>
                 <li id ="login"><a href="contact_list.php">Contact List</a></li>
             </ul>
         </div>

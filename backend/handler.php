@@ -21,6 +21,6 @@
   } 
   else {
     $_SESSION['logged_in'] = true;
-    header("Location: ../pages/utilities.php");
+    header("Location: ../index.php");
   }
 ?>
