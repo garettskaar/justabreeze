@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <html>
     <head>
         <title>Just A Breeze</title>
@@ -7,12 +10,13 @@
         <div>
             <h1>Legends</h1>
             <ul>
-                <li><a href="brickyard.html">Brickyard</a></li>
-                <li><a href="brixx.html">Brixx</a></li>
-                <li><a href="frontdoor.html">Frontdoor</a></li>
-                <li><a class="active" href="legends.html">Legends</a></li>
-                <li><a href="reef.html">Reef</a></li>
-                <li id="login"><a href="login.php">Login</a></li>
+                <li><a href="brickyard.php">Brickyard</a></li>
+                <li><a href="brixx.php">Brixx</a></li>
+                <li><a href="frontdoor.php">Frontdoor</a></li>
+                <li><a class="active" href="legends.php">Legends</a></li>
+                <li><a href="reef.php">Reef</a></li>
+                <li id ="login"><a href="login.php">Login</a></li>
+                <li id ="login"><a href="contact_list.php">Contact List</a></li>
             </ul>
         </div>
         <div>
@@ -27,6 +31,6 @@
                     <td>Saturday</td>
                 </tr>
             </table>
-        </div>      
+        </div>
     </body>
-</html> 
+</html>

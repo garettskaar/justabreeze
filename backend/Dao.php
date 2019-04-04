@@ -23,6 +23,11 @@ class Dao {
         }
         return $conn;
     }
+    public function login($username, $password) {
+        $this->logger->LogInfo("Attempting login " . $username ." password = ". $password);
+        $conn = $this->getConnection();
+        return $conn->query("select user_name, password from employee where user_name = {$userName}", PDO::FETCH_ASSOC);
+    }
     public function getEmployee ($userName) {
         $conn = $this->getConnection();
         //TODO
@@ -34,11 +39,11 @@ class Dao {
             $restaurant_id = 1;
         }else if($restaurant == 'brixx'){
             $restaurant_id = 2;
-        }else if($restaurant == 'Frontdoor'){
+        }else if($restaurant == 'frontdoor'){
             $restaurant_id = 3;
-        }else if($restaurant == 'Legends'){
+        }else if($restaurant == 'legends'){
             $restaurant_id = 4;
-        }else if($restaurant == 'Reef'){
+        }else if($restaurant == 'reef'){
             $restaurant_id = 5;
         }
         $conn = $this->getConnection();

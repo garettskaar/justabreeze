@@ -1,9 +1,14 @@
 
 <?php
   session_start();
-  // Pretend i'm looking this up in a database
-  $password_in_the_database = "abc123";
-  if ($password_in_the_database != $_POST["password"]) {
+
+  $username = $_POST['username'];
+  $password = $_POST['password'];
+
+  require_once 'Dao.php';
+  $dao = new Dao();
+  $login = $dao->login($username, $password);
+  if ($password_in_the_database != $password) {
     $_SESSION['message'] = "Error, the password was incorrect.";
     header("Location: ../pages/login.php");
     exit();

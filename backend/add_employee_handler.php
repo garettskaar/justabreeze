@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$employee_name = $_POST['employeename'];
+$employee_name = $_POST['employee_name'];
 $phone = $_POST['phone'];
 $email = $_POST['email'];
 $restaurant = $_POST['restaurant'];
@@ -25,7 +25,7 @@ if (empty($email)) {
     $valid = false;
 }
 if (empty($username)) {
-  $messages[] = "Please enter employee username";
+  $messages[] = "Please enter employee's username";
   $valid = false;
 }
 if ($password1 != $password2) {
