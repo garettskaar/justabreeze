@@ -1,14 +1,33 @@
 
-now - INFO  --> Attempting login gskaar 
+now - INFO  --> wtf 
 now - DEBUG --> Getting a connection. 
-now - INFO  --> Attempting login gskaar 
+now - INFO  --> wtf 
 now - DEBUG --> Getting a connection. 
-now - INFO  --> Attempting login gskaar 
+now - INFO  --> result: Array 
+now - INFO  --> wtf 
 now - DEBUG --> Getting a connection. 
-now - INFO  --> Attempting login gskaar 
+now - INFO  --> result: 6651 
+now - INFO  --> wtf 
 now - DEBUG --> Getting a connection. 
-now - INFO  --> Attempting login gskaar 
+now - INFO  --> result: 6651 
+now - INFO  --> wtf 
 now - DEBUG --> Getting a connection. 
-now - INFO  --> Attempting login gskaar 
+now - INFO  --> result: 6651 
+now - INFO  --> wtf 
 now - DEBUG --> Getting a connection. 
-now - INFO  --> password:  
+now - INFO  --> result: 6651 
+now - INFO  --> wtf 
+now - DEBUG --> Getting a connection. 
+now - INFO  --> result: 6651 
+now - INFO  --> wtf 
+now - DEBUG --> Getting a connection. 
+now - INFO  --> result: 6651 
+now - INFO  --> wtf 
+now - DEBUG --> Getting a connection. 
+now - INFO  --> result: 6651 
+now - INFO  --> wtf 
+now - DEBUG --> Getting a connection. 
+now - INFO  --> result: 6651 
+now - INFO  --> wtf 
+now - DEBUG --> Getting a connection. 
+now - INFO  --> result: 6651 
