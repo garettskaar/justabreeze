@@ -1,12 +1,12 @@
 <?php
 require_once 'KLogger.php';
-
+//mysql://b2b615eaa73fa2:612152cf@us-cdbr-iron-east-03.cleardb.net/heroku_48bbb84ac8c8d06?reconnect=true
 class Dao {
 
-    private $host = "localhost";
-    private $db = "justabreeze";
-    private $user = "gskaar";
-    private $pass = "Garett11";
+    private $host = "us-cdbr-iron-east-03.cleardb.net";
+    private $db = "heroku_48bbb84ac8c8d06";
+    private $user = "b2b615eaa73fa2";
+    private $pass = "612152cf";
     protected $logger;
     public function __construct () {
         $this->logger = new KLogger ( "log.txt" , KLogger::DEBUG );
