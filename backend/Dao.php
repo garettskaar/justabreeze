@@ -24,10 +24,14 @@ class Dao {
         return $conn;
     }
     public function login($username) {
-        $this->logger->LogInfo("Attempting login " . $username);
+        $this->logger->LogInfo("wtf");
         $conn = $this->getConnection();
-        $result = $conn->query("SELECT user_name, password FROM employee WHERE user_name = {$username}", PDO::FETCH_ASSOC);
-        $this->logger->LogInfo("password: " . $result[0]['password']);
+        $getQuery = "SELECT user_name, password FROM employee WHERE user_name = :username";
+        $q = $conn->prepare($getQuery);
+        $q->bindParam(":username", $username);
+        $q->execute();
+        $result = $q->fetch();
+        $this->logger->LogInfo("result: " . $result['password']);
         return $result;
     }
     public function getEmployee ($userName) {
