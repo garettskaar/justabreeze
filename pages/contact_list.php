@@ -9,9 +9,11 @@ session_start();
   <body>
     <h1>Employee Contact List</h1>
      <?php
+     echo "TEST1";
      require_once 'Dao.php';
      $dao = new Dao();
      $employees = $dao->getEmployees();
+     echo "TEST2";
      echo "<table>";
      foreach ($employees as $employee) {
        echo "<tr><td>". $employee['employee_name'] . "</td><td>". $employee['phone_number'] . "</td><td>" . $employee['email'] . "</td></tr>";
