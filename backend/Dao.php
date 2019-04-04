@@ -43,6 +43,7 @@ class Dao {
         $conn = $this->getConnection();
         $getQuery = "SELECT employee_name, phone_number, email FROM employee";
         $q = $conn->prepare($getQuery);
+        $q->setFetchMode(PDO::FETCH_ASSOC);
         $q->execute();
         $result = $q->fetch();
         $this->logger->LogInfo("result: " . $result);
