@@ -10,3 +10,5 @@ now - INFO  --> Adding Employee Kenny Werth username = Kenny Werth
 now - DEBUG --> Getting a connection. 
 now - INFO  --> Adding Employee Kenny Werth username = kwerth 
 now - DEBUG --> Getting a connection. 
+now - INFO  --> Attempting login kwerth password = 1234 
+now - DEBUG --> Getting a connection. 

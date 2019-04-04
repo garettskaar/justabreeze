@@ -4,21 +4,21 @@ session_start();
 
 <html>
   <head>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="forms.css">
   </head>
   <body>
     <h1>Add Employee</h1>
     <form method="post" action="../backend/add_employee_handler.php">
-        <div><label for="employeename">Employee Name:</label>
+        <div><label for="employeename"><b>Employee Name</b></label>
             <input value="<?php echo isset($_SESSION['form_input']['employeename']) ? $_SESSION['form_input']['employeename'] : ''; ?>" type="text" id="employeename" name="employeename">
         </div>
-        <div><label for="phone">Phone Number:</label>
+        <div><label for="phone"><b>Phone Number</b></label>
             <input value="<?php echo isset($_SESSION['form_input']['phone']) ? $_SESSION['form_input']['phone'] : ''; ?>" type="text" id="phone" name="phone">
         </div>
-        <div><label for="email">Email:</label>
+        <div><label for="email"><b>Email:</label>
             <input value="<?php echo isset($_SESSION['form_input']['email']) ? $_SESSION['form_input']['email'] : ''; ?>" type="text" id="email" name="email">
         </div>
-        <div><label for="restaurant">Restaurant:</label>
+        <div><label for="restaurant"><b>Restaurant</b></label>
             <select name="restaurant">
                 <option value="brickyard">Brickyard</option>
                 <option value="brixx">Brixx</option>
@@ -27,7 +27,7 @@ session_start();
                 <option value="reef">Reef</option>
             </select>
         </div>
-        <div><label for="position">Postition:</label>
+        <div><label for="position"><b>Postition</b></label>
             <select name="position">
                 <option value="server">Server</option>
                 <option value="bartender">Bartender</option>
@@ -36,11 +36,11 @@ session_start();
                 <option value="manager">Manager</option>
             </select>
         </div>
-        <div><label for="username">Username:</label>
+        <div><label for="username"><b>Username</b></label>
             <input value="<?php echo isset($_SESSION['form_input']['username']) ? $_SESSION['form_input']['username'] : ''; ?>" type="text" id="username" name="username">
         </div>
-        <div><label for="password1">Password:</label> <input type="password" id="password1" name="password1"></div>
-        <div><label for="password2">Retype Password:</label> <input type="password" id="password2" name="password2"></div>
+        <div><label for="password1"><b>Password</b></label> <input type="password" id="password1" name="password1"></div>
+        <div><label for="password2"><b>Retype Password</b></label> <input type="password" id="password2" name="password2"></div>
       <?php
       if (isset($_SESSION['messages'])) {
         foreach($_SESSION['messages'] as $message) {
@@ -50,7 +50,7 @@ session_start();
       unset($_SESSION['message']);
       unset($_SESSION['form_input']);
       ?>
-      <div><input type="submit" value="Add Employee"></div>
+      <button type="submit">Add Employee</button>
     </form>
   </body>
 </html>
