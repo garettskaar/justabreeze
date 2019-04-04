@@ -45,7 +45,7 @@ class Dao {
         $q = $conn->prepare($getQuery);
         $q->setFetchMode(PDO::FETCH_ASSOC);
         $q->execute();
-        $result = $q->fetch();
+        $result = $q->fetchAll();
         $this->logger->LogInfo("result: " . $result);
         return $result;
     }
