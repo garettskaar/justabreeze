@@ -41,7 +41,7 @@ class Dao {
     }
     public function getEmployees() {
         $conn = $this->getConnection();
-        $getQuery = "SELECT employee_name, phone_number, email FROM employee ORDER BY employee_id DESC";
+        $getQuery = "SELECT employee_name, phone_number, email FROM employee";
         $q = $conn->prepare($getQuery);
         $q->execute();
         $result = $q->fetch();
