@@ -6,14 +6,14 @@ class Dao {
     //db:heroku_48bbb84ac8c8d06
     //user:b2b615eaa73fa2
     //pass:612152cf
-    // private $host = "us-cdbr-iron-east-03.cleardb.net";
-    // private $db = "heroku_48bbb84ac8c8d06";
-    // private $user = "b2b615eaa73fa2";
-    // private $pass = "612152cf";
-    private $host = "localhost";
-    private $db = "justabreeze";
-    private $user = "gskaar";
-    private $pass = "Garett11";
+    private $host = "us-cdbr-iron-east-03.cleardb.net";
+    private $db = "heroku_48bbb84ac8c8d06";
+    private $user = "b2b615eaa73fa2";
+    private $pass = "612152cf";
+    // private $host = "localhost";
+    // private $db = "justabreeze";
+    // private $user = "gskaar";
+    // private $pass = "Garett11";
     protected $logger;
     public function __construct () {
         $this->logger = new KLogger ( "log.txt" , KLogger::DEBUG );
