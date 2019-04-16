@@ -14,7 +14,7 @@ session_start();
      $employees = $dao->getEmployees();
      echo "<table>";
      foreach ($employees as $employee) {
-       echo "<tr><td>". $employee['employee_name'] . "</td><td>". $employee['phone_number'] . "</td><td>" . $employee['email'] . "</td></tr>";
+       echo "<tr><td>". htmlspecialchars($employee['employee_name']) . "</td><td>". htmlspecialchars($employee['phone_number']) . "</td><td>" . htmlspecialchars($employee['email']) . "</td></tr>";
      }
      echo "</table>";
      ?>

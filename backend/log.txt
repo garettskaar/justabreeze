@@ -1,1 +1,0 @@
-now - DEBUG --> Getting a connection. 

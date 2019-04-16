@@ -16,9 +16,17 @@ if (empty($employee_name)) {
     $messages[] = "Please enter employee's name";
     $valid = false;
 }
+if (40 < strlen($employee_name)){
+  $messages[] = "Name is too long, abbreviate first or last name please.";
+  $valid = false;
+}
 if (empty($phone)) {
     $messages[] = "Please enter employee's phone number";
     $valid = false;
+}
+if (13 < strlen($phone)){
+  $messages[] = "Double check the phone number, its too long";
+  $valid = false;
 }
 if (empty($email)) {
     $messages[] = "Please enter employee's email";
@@ -26,6 +34,10 @@ if (empty($email)) {
 }
 if (empty($username)) {
   $messages[] = "Please enter employee's username";
+  $valid = false;
+}
+if (20 < strlen($username)){
+  $messages[] = "Username is too long, first name initial followed by last name please. (e.g. jsmith)";
   $valid = false;
 }
 if ($password1 != $password2) {
